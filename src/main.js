@@ -19,7 +19,7 @@ init.connect(function(error) {
 
 // agree body type request
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // router basic
 app.post("/basic", function(req, res) {
@@ -49,4 +49,4 @@ app.post("/advance", function(req, res) {
 });
 
 // start server
-app.listen(10000, () => { "listen port 10000"});
+app.listen(10000, () => { console.log("listen port 10000"); });
